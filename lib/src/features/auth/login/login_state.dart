@@ -1,4 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:flutter/material.dart';
+
 enum LoginStateStatus {
   initial,
   error,
@@ -19,11 +21,11 @@ class LoginState {
 
   LoginState copyWith({
     LoginStateStatus? status,
-    String? errorMessage,
+    ValueGetter<String?>? errorMessage,
   }) {
     return LoginState(
       status: status ?? this.status,
-      errorMessage: errorMessage ?? this.errorMessage,
+      errorMessage: errorMessage != null ? errorMessage() : this.errorMessage,
     );
   }
 }

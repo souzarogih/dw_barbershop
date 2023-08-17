@@ -3,6 +3,13 @@
 App para gestão de atendimentos em barbearias e vendas de produtos e serviços online.
 
 
+`$ dart run build_runner watch -d`
+
+### Implementações Futuras
+
+-customer user (Usuário consumidor)
+-tela de lojas para customer user
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

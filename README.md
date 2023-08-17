@@ -1,6 +1,7 @@
-# dw_barbershop
+# BarberShop App
 
-A new Flutter project.
+App para gestão de atendimentos em barbearias e vendas de produtos e serviços online.
+
 
 ## Getting Started
 

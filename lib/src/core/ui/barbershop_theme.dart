@@ -11,6 +11,15 @@ sealed class BarbershopTheme {
 
   static ThemeData themeData = ThemeData(
     useMaterial3: true,
+    appBarTheme: const AppBarTheme(
+      centerTitle: true,
+      iconTheme: IconThemeData(color: ColorsConstants.brow),
+      titleTextStyle: TextStyle(
+          fontWeight: FontWeight.w500,
+          fontSize: 18,
+          color: Colors.black,
+          fontFamily: FontConstants.fontFamily),
+    ),
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: Colors.white,
@@ -32,5 +41,6 @@ sealed class BarbershopTheme {
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(8))),
     ),
     fontFamily: FontConstants.fontFamily,
+    // colorScheme: const ColorScheme(background: Colors.white),
   );
 }

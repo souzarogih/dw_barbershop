@@ -6,7 +6,7 @@ final class RestClient extends DioForNative {
   RestClient()
       : super(
           BaseOptions(
-            baseUrl: 'http://192.168.0.2:8080',
+            baseUrl: 'http://192.168.0.6:8080',
             connectTimeout: const Duration(seconds: 10),
             receiveTimeout: const Duration(seconds: 60),
           ),
@@ -21,7 +21,7 @@ final class RestClient extends DioForNative {
   }
 
   RestClient get auth {
-    options.extra['DIO_AUTH_KEY'] = false;
+    options.extra['DIO_AUTH_KEY'] = true;
     return this;
   }
 
